@@ -1230,8 +1230,8 @@
             ],
             "id": "9c1441d6-d205-4861-a3d7-f1365ef4711e",
             "source": {
-              "cell": "a0567a59-a371-4c8e-aa19-4192b5e50cdb",
-              "port": "1cb3ffd9-57e8-4eff-b3ab-5629d5669120"
+              "x": 213,
+              "y": 100
             },
             "target": {
               "cell": "06e80ca5-c087-4825-a793-d2531984e6d5",
@@ -1302,6 +1302,67 @@
             "shape": "flow",
             "attrs": {
               "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "3e371d6f-1e9a-4e82-8bc0-4e19b45df313",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "ea0cecb8-dd78-4991-a045-1c44ad9bdb89",
+            "source": {
+              "x": 380,
+              "y": 250
+            },
+            "target": {
+              "x": 480,
+              "y": 350
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -1334,13 +1395,13 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "ea0cecb8-dd78-4991-a045-1c44ad9bdb89",
+            "id": "02a070a2-ee6e-47a6-8a5b-3b5a2696ac97",
             "source": {
-              "x": 380,
+              "x": 440,
               "y": 250
             },
             "target": {
-              "x": 480,
+              "x": 540,
               "y": 350
             }
           },
@@ -1589,6 +1650,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
