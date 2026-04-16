@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "593cddc7-cfbc-465e-a103-82d9c4d0e8de",
             "zIndex": -1,
+            "id": "593cddc7-cfbc-465e-a103-82d9c4d0e8de",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Sensitive data boundary",
@@ -310,6 +310,13 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -438,18 +445,24 @@
               "threats": [
                 {
                   "id": "7421a34a-e9d3-4629-ba94-ea619abb968e",
-                  "title": "New STRIDE threat",
+                  "title": "Inference attack",
                   "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Analyzing data to figure out the real identity of guests",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
-                  "new": true,
+                  "new": false,
                   "number": 9,
                   "score": ""
                 }
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -587,6 +600,19 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "b9da1555-9dc0-4d42-af08-534acfb3c194",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 10,
                   "score": ""
                 }
               ],
@@ -1994,8 +2020,8 @@
                 "text": "Identity \nresovler\nservice"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2092,12 +2118,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "30ee7e91-e890-4a07-b1c5-4e8f3804cf4c",
+                  "title": "Exposure of linkage between media and real identities",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Elevation of privilege",
+                  "description": "The connection between surveillance data and real identities is exposed, breaking pseudonymization",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -2383,6 +2431,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -2466,7 +2515,6 @@
               ]
             },
             "id": "5d48cb98-7cfe-4e10-8208-047b5bcf23b3",
-            "zIndex": 16,
             "data": {
               "type": "tm.Actor",
               "name": "Cameras",
@@ -2512,6 +2560,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 9
+    "threatTop": 11
   }
 }
