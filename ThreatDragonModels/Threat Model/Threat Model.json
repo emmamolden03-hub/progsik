@@ -1290,52 +1290,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Tokens/User info",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Tokens/User info"
-            ],
-            "id": "94ad458d-b0b5-458c-885f-4e77f88aa048",
-            "source": {
-              "x": 674,
-              "y": 60
-            },
-            "target": {
-              "cell": "06e80ca5-c087-4825-a793-d2531984e6d5",
-              "port": "5cb680c2-62c4-4b41-b3ff-bad02df14c66"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": ""
                 },
                 "strokeDasharray": null
@@ -1719,58 +1673,6 @@
               "cell": "46762294-42d6-42b2-a57d-55c252d303eb",
               "port": "773c45d7-e045-433b-97b9-a6fe11d750fc"
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "090531f0-f1b7-4559-a834-a9daa5e9f409",
-            "source": {
-              "cell": "0a072c85-4d2a-4a6e-993a-7a16e5f9b569",
-              "port": "5cb680c2-62c4-4b41-b3ff-bad02df14c66"
-            },
-            "target": {
-              "cell": "8dbb5118-5ef0-4d60-9859-01eb87f57de8",
-              "port": "ea367011-1b0f-4eda-b71e-57b66f156a5d"
-            },
-            "vertices": [
-              {
-                "x": 450,
-                "y": 270
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -2227,6 +2129,110 @@
               {
                 "x": 550,
                 "y": 290
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Media query",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Media query"
+            ],
+            "id": "090531f0-f1b7-4559-a834-a9daa5e9f409",
+            "source": {
+              "cell": "0a072c85-4d2a-4a6e-993a-7a16e5f9b569",
+              "port": "5cb680c2-62c4-4b41-b3ff-bad02df14c66"
+            },
+            "target": {
+              "cell": "8dbb5118-5ef0-4d60-9859-01eb87f57de8",
+              "port": "ea367011-1b0f-4eda-b71e-57b66f156a5d"
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 270
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Tokens/User info",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Tokens/User info"
+            ],
+            "id": "94ad458d-b0b5-458c-885f-4e77f88aa048",
+            "source": {
+              "x": 674,
+              "y": 60
+            },
+            "target": {
+              "cell": "06e80ca5-c087-4825-a793-d2531984e6d5",
+              "port": "5cb680c2-62c4-4b41-b3ff-bad02df14c66"
+            },
+            "vertices": [
+              {
+                "x": 550,
+                "y": 110
               }
             ]
           },
